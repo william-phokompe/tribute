@@ -10,6 +10,7 @@
         }
 
         body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1.6rem;
             line-height: 1.5;
             text-align: center;
@@ -28,11 +29,94 @@
                 line-height: 1.2;
             }
         }
+
+        h2 {
+            font-size: 3.25rem;
+        }
+
+        a {
+            color: #477ca7;
+        }
+
+        a:visited {
+            color: #74638f;
+        }
+
+        #main {
+            margin: 30px 8px;
+            padding: 15px;
+            border-radius: 5px;
+            background: #eee;
+        }
+
+        @media (max-width: 460px) {
+            #main {
+                margin: 0;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        #img-div {
+            background: white;
+            padding: 10px;
+            margin: 0;
+        }
+
+        #img-caption {
+            margin: 15px 0 5px 0;
+        }
+
+        @media (max-width: 460px) {
+            #img-caption {
+                font-size: 1.4rem;
+            }
+        }
+
+        #headline {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        blockquote {
+            font-style: italic;
+            max-width: 545px;
+            margin: 0 auto 50px auto;
+            text-align: left;
+        }
+
     </style>
 </head>
 <body>
     <main id="main">
-        <h1 id="title">Dr. Norman Borlaug</h1>
+        <h1 id="title">William Kamkwamba</h1>
+        <p>The Boy Who Harnessed the Wind </p>
+        <figure id="img-div">
+            <img id="image" src="https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/boy-who-harnessed-the-wind-the-2019-003-maxwell-simba-rope.jpg?itok=uahK0LxJ" alt="William Kwamkwamba seen drawing water from a well">
+            <figcaption id="img-caption">
+                "
+                    A Malawian boy with a cunning plan to save his village
+                "
+            </figcaption>
+        </figure>
+        <section id="tribute-info">
+            <h3 id="headline">Storyline: </h3>
+            <blockquote cite="https://www.imdb.com/title/tt7533152/">
+                <p>
+                    "
+                    William Kamkuamb was born in the country of Malawi, in Africa. When he was fourteen years old, a terrible drought hit the village where he lived. People had nothing to eat and drink. Being an excellent student and very fond of physics, the guy decides to save his native village from starvation. In the library he finds scientific books on physics. He studied the books and the guy got an idea to build a wind generator..
+                    "
+                </p>
+                <cite>
+                    --Written by <a id="tribute-link" href="https://www.imdb.com/video/imdb/vi2114501145?playlistId=tt7533152&ref_=tt_ov_vi" target="_blank">Peter-Patrik76 (peter-patrik@mail.com)</a>
+                </cite>
+            </blockquote>
+        </section>
     </main>
 </body>
 </html>
